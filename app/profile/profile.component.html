@@ -1,0 +1,27 @@
+<!-- <p>
+  profile works!
+</p> -->
+<!-- <html>
+  <body>
+    <table>
+
+    </table>
+  </body>
+</html> -->
+
+<div>
+  <h1>{{user.name}}</h1>
+  <h3>{{user.job}}</h3>
+  <button (click)="samplecheck()">Expand/collapsed</button>
+  <div *ngIf=!check>
+  <p>{{user.address}}</p>
+  <div *ngIf="user.Phone.length>0">
+  <div>
+    <p>Phone:</p>
+    <!-- <p>{{user.Phone[0]}}</p>
+    <p>{{user.Phone[1]}}</p> -->
+    <p *ngFor="let phoneno of user.Phone">{{phoneno}}</p>
+  </div>
+</div>
+</div>
+</div>
